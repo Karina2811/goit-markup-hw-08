@@ -1,0 +1,87 @@
+
+
+
+
+/*.header {
+    border-bottom: 1px solid #ECECEC;
+   
+    &__container{
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        margin-left: auto;
+    }
+    &__item {
+            margin-left: 50px;
+        }
+    &__link {
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 32px 0;
+            fill: currentColor;
+        }
+}
+.logo {
+    @include font(26px, 700, 1.2, 00.03em);
+
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    text-decoration: none;
+
+    &__first {
+        color: var(--accent-color);
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__list{
+            display: flex;
+            margin-left: 93px;
+        }
+    &__item{
+        &:not(:last-child) {
+                margin-right: 50px;
+            }
+    }
+    &__link{
+            color: var(--praymory-text-color);
+        }
+        
+}
+
+.current:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -1px;
+    border-radius: 2px;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    color: var(--accent-color)
+}
+
+.menu__link-active {
+    color: var(--accent-color);
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--accent-color);
+}
+
+.header__link:hover svg,
+.header__link:focus svg {
+    fill: currentColor;
+}*/

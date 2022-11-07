@@ -1,0 +1,60 @@
+.benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__item:not( :last-child){
+        @media screen and (max-width: 767px) {
+          margin-bottom: 30px;  
+        }
+    }
+    &__icon {
+        display: flex;
+        width: 450px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        }
+    &__title {
+        @include font(14px, 700, 1.1, 0.03em);
+    
+        margin-bottom: 10px;   
+    }
+    &__text {
+        @include font(14px, 400, 1.7, 0.03em);
+    
+        color: var(--text-color);   
+    }
+}
+    /*padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list{
+            display: flex;
+            gap: 30px;
+        }
+    &__icon{
+            display: flex;
+            width: 270px;
+            height: 120px;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F4FA;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+    &__title{
+            @include font(14px, 700, 1.1, 0.03em);
+            
+            color: var(--praymory-text-color);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    &__text{
+            @include font(14px, 400, 1.7, 0.03em);
+            
+            color: var(--text-color);
+        }*/
+

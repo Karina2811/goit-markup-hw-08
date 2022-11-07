@@ -1,0 +1,23 @@
+/*.studio_p-link {
+    color: var(--praymory-text-color);
+
+    &:hover,
+    &:focus{
+            color: var(--accent-color);
+    }
+}
+
+.portfolio_p-link {
+    color: var(--accent-color);
+
+    &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 78px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin-top: 28px;
+            border-radius: 2px;
+    }
+}*/
