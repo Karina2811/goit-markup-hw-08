@@ -1,4 +1,13 @@
+.link {
+    @include font(14px, 500, 1.1, 0.02em);
 
+    position: relative;
+    text-decoration: none;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .list {
     list-style: none;
     margin: 0;
@@ -22,25 +31,11 @@
     color: var(--praymory-text-color);
     text-align: center;
 }
-/*.link {
-    @include font(14px, 500, 1.1, 0.02em);
-    
-    position: relative;
-    text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 .subtitle {
     @include font(14px, 700, 1.1, 0.03em);
-    
+
     font-style: normal;
     text-transform: uppercase;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
-}*/
+}

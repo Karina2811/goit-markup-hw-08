@@ -1,22 +1,41 @@
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imghero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile1x/hero-img-mob-1x.jpg);
+
+    @include retina{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile2x/hero-img-mob-2x.jpg);
+    }
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 1600px;
+    max-width: 480px;
     height: 400px;
     background-position: center;
     margin-right: auto;
     margin-left: auto;
+    
+    @include tablet{
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet1x/hero-img-tabl-1x.jpg);
+        max-width: 768px;
+        @include retina{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet2x/hero-img-tabl-2x.jpg);
+        }
+        
+    }
+    
+    @include desktop{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop1x/hero-img-desk-1x.jpg);
+    max-width: 1600px;
+    
+         @include retina{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop2x/hero-img-desk-2x.jpg);
+        }
+    }
 
     &__title{
         font-family: 'Roboto';
             font-style: normal;
-            font-weight: 900;
-            font-size: 26px;
-            line-height: 1.6;
-            letter-spacing: 0.06em;
+            @include font(26px, 900, 1.6, 0.06em);
             text-transform: uppercase;
             color: var(--secondary-text-color);
             max-width: 360px;

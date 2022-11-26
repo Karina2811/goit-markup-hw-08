@@ -1,16 +1,19 @@
-/*.container {
-    
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
 .container{
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 0;
-    margin-right: 0;
-    @media screen and (min-width: 480px){
-     width: 480px;   
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mobile{
+     width: 480px;
+    }
+    
+    @include tablet {
+      width: 768px; 
+    }
+    
+    @include desktop {
+       width: 1200px;
+       margin: 0 auto;
     }
 }

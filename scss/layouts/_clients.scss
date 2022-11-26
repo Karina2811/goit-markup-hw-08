@@ -1,15 +1,29 @@
 .title{
     margin-bottom: 30px;
+    
+    @include desktop{
+    margin-bottom: 50px;
+    }
 }
 .clients {
     background: var(--secondary-text-color);
     padding-top: 60px;
     padding-bottom: 60px;
-&__list {
+    
+    @include desktop{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+    &__list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+       
+        @include desktop{
+            flex-wrap: nowrap;
+        }
 }
 &__link {
       width: 210px;
@@ -22,6 +36,11 @@
       transition-property: border-color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
+      @include desktop{
+        width: 170px;
+        height: 92px;
+      }
 }
 &__icon {
     fill: #AFB1B8;
