@@ -1,19 +1,10 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    &__container{
-        @include mobile{
-            height: 60px;
-        }
-        @include tablet{
-            height: 80px;
-        }
-    }
-    
-        
+
     &__container {
-        display: flex;
         position: relative;
         border: none;
+        display: flex;
     }
         
 }
@@ -22,7 +13,7 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 
     &__logo {
             @include font(24px, 700, 1.2, 00.03em);
@@ -30,12 +21,9 @@
             font-family: "Raleway", sans-serif;
             color: #000000;
             text-decoration: none;
-    
-            @include mobile {
-                padding: 16px 0;
-            }
-    
-            @include tablet {
+            padding: 16px 0;
+
+            @include tablet{
                 padding: 26px 0;
             }
     
@@ -67,7 +55,7 @@
         }
         
     &__list {
-        margin-left: 93px;
+        
         display: none;
 
         @include tablet{
@@ -76,6 +64,7 @@
                 }
          @include desktop{
             display: flex;
+            margin-left: 93px;
          }       
     }
         
@@ -87,6 +76,8 @@
         
     &__link {
         color: var(--praymory-text-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
         
 }
@@ -113,29 +104,30 @@
 .contact{
     &__list {
         display: none;
-        margin-left: auto;
     
         @include tablet {
             display: flex;
             flex-direction: column;
-            padding: 21px 0;
+            margin-left: auto;
+            justify-content: center;
+            
+
             }
         @include desktop{
             display: flex;
             flex-direction: row;
-            gap: 30px;
-            padding: 32px 0;
+            align-items: center;
         }
     }
     
     &__item {
-        @include tablet{
+        @media screen and(max-width: 1199px) {
         &:not(:last-child) {
-            margin-bottom: 10px;
+                margin-bottom: 10px;
             }
         }
-        @include desktop {
-           margin-left: 50px;
+        @include desktop{
+            margin-left: 50px;
         }
     }
     
@@ -152,6 +144,7 @@
             
         }
         @include desktop{
+            font-size: 14px;
             gap: 10px;
         }
     }

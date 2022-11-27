@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms linear, visibility 250ms linear;
@@ -161,7 +161,7 @@
         }
     }
 }
-.form__btn{
+.modal__btn{
         margin-top: 30px;
     }
     /*.backdrop {

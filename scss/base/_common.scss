@@ -30,6 +30,9 @@
 
     color: var(--praymory-text-color);
     text-align: center;
+    @include desktop{
+        @include font(36px, 700, 1.2, 0.03em);
+    }
 }
 .subtitle {
     @include font(14px, 700, 1.1, 0.03em);
