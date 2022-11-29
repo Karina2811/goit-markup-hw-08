@@ -45,7 +45,7 @@
   &__img{
      display: block;
      @include mobile {
-      width: 100%;
+      max-width: 100%;
       
     }
      @include tablet{

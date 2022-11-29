@@ -37,6 +37,9 @@
         padding-top: 48px;
         padding-bottom: 48px;
     }
+    &__list{
+        margin-bottom: 96px;
+    }
     &__item:not(:last-child){
        margin-bottom: 32px;
     }
@@ -60,7 +63,9 @@
 }
 .mob-contact{
     &__list{
-        padding-top: 302px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item-tel{
         margin-bottom: 32px;

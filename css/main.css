@@ -31,19 +31,19 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-widht: 480px) {
+@media screen and (max-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -675,7 +675,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .team__img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1773,6 +1773,9 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.mobaile-menu__list {
+  margin-bottom: 96px;
+}
 .mobaile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1803,7 +1806,14 @@ img {
 }
 
 .mob-contact__list {
-  padding-top: 302px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .mob-contact__item-tel {
   margin-bottom: 32px;
